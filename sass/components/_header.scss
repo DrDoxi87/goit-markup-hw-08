@@ -1,0 +1,126 @@
+.logo {
+  display: block;
+
+  color: $accentColor;
+  font-family: $Raleway, $SansSerif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  &__span--origin {
+    color: #000000;
+  }
+  &__span--reversed {
+    color: $titleTextColor;
+  }
+}
+
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  margin: auto;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contacts-link {
+    display: block;
+    color: $primaryTextColor;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color 250ms $animationTimingFunction,
+      fill 250ms $animationTimingFunction;
+  }
+
+  &__contacts-link:hover,
+  &__contacts-link:focus {
+    color: $accentColor;
+    fill: $accentColor;
+  }
+
+  &__contacts-link {
+    color: $secondaryTextColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__contacts-list {
+    display: flex;
+    margin-left: auto;
+    padding-left: 0px;
+  }
+
+  &__contacts-item:not(:first-child) {
+    margin-left: 50px;
+  }
+
+  &__contacts-icon {
+    background-size: contain;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  margin-left: 93px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+
+  &__link {
+    display: block;
+    color: $primaryTextColor;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color 250ms $animationTimingFunction,
+      fill 250ms $animationTimingFunction;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accentColor;
+    fill: $accentColor;
+  }
+  &__link--active {
+    position: relative;
+
+    color: $accentColor;
+  }
+  &__link--active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accentColor;
+  }
+}
