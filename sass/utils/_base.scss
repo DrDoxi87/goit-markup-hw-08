@@ -1,8 +1,8 @@
 body {
   background-color: #ffffff;
-  color: var(--primary-text-color);
+  color: $primaryTextColor;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $Roboto, $SansSerif;
   letter-spacing: -0.015em;
   font-size: 14px;
   line-height: 1.71;
@@ -36,7 +36,18 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }

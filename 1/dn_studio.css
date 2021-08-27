@@ -27,17 +27,9 @@
     color: $titleTextColor;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
+    font-size: 44px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
-
-    text-align: center;
-    letter-spacing: 0.06em;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.36;
-    }
   }
 
   &__btn {
@@ -70,60 +62,25 @@
 
 // _________________________________________________________
 .advantage {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   &__title {
     display: none;
   }
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .advantage-list {
+  display: flex;
+  justify-content: space-between;
   padding-left: 0px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-wrap: wrap;
-  }
-
   &__item:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
-  }
-
-  &__item:nth-child(-n + 2) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-bottom: 30px;
-    }
+    margin-right: 30px;
   }
 
   &__item {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: calc((100% - 30px) / 2);
-      margin-right: 30px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: calc((100%-90) / 4);
-    }
-  }
-  &__item:nth-child(2n) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-right: 0;
-    }
-  }
-
-  &__item:not(:last-child) {
-    @media screen and (min-width: 1200px) {
-      margin-right: 30px;
-    }
+    width: calc((100%-90) / 4);
   }
 
   &__title {
@@ -133,10 +90,6 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
   }
 
   &__description {
@@ -148,10 +101,8 @@
 
   &__icon {
     background-color: #f5f4fa;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 100px;
     border-radius: 4px;
-    text-align: center;
   }
 
   &__container {
@@ -162,9 +113,6 @@
 // ________________________________________________________
 .function {
   padding-bottom: 94px;
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
 
   &__title {
     margin-bottom: 50px;
@@ -209,78 +157,38 @@
 // ______________________________________________________
 
 .team {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
   margin: auto;
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
-    font-size: 28px;
-    line-height: 1.18;
-
-    letter-spacing: 0.03em;
+    font-size: 36px;
     text-align: center;
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 50px;
-      font-size: 36px;
-      line-height: 1.17;
-    }
+    line-height: 1.17;
+    letter-spacing: 0.03em;
   }
 }
 
 .team-list {
-  padding-left: 0px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  @media screen and (min-width: 1200px) {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
+  padding-left: 0px;
 
   &__card {
+    width: 270px;
+    /* height: 368px; */
+
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: calc((100% - 30px) / 2);
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
-  }
-
-  &__card:nth-child(2n) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-right: 0;
-    }
-  }
-
-  &__card:nth-last-child(-n + 2) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-bottom: 0;
-    }
   }
 
   &__description {
-    padding-top: 30px;
-    padding-bottom: 24px;
-    @media screen and (min-width: 1200px) {
-      padding-bottom: 30px;
-    }
+    padding: 30px 32px;
   }
 
   &__title {
@@ -309,7 +217,7 @@
     display: flex;
     align-items: center;
     padding-left: 0px;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   &__icon {
@@ -331,4 +239,48 @@
   }
 }
 
-// ________________________________________________________________
+// ________________________________________________
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  list-style: none;
+
+  &__logo {
+    fill: #afb1b8;
+    transition: fill 250ms $animationTimingFunction;
+  }
+
+  &__link {
+    display: block;
+    max-height: 92px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    transition: border-color 250ms $animationTimingFunction;
+  }
+
+  &__item &__link:hover,
+  &__item &__link:focus,
+  &__link:hover &__logo,
+  &__link:focus &__logo {
+    fill: $accentColor;
+    border-color: $accentColor;
+  }
+}

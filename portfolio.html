@@ -73,6 +73,20 @@
             </a>
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-button menu-button--open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -387,5 +401,67 @@
         </div>
       </div>
     </footer>
+    <!-- =================== МОБИЛЬНОЕ МЕНЮ ===================== -->
+    <div class="mobile-menu--container js-menu-container" id="mobile-menu">
+      <button class="menu-button menu-button--close js-close-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__site-nav">
+        <li class="mobile-menu__site-nav__item">
+          <a
+            href="./index.html"
+            class="
+              mobile-menu__site-nav__link mobile-menu__site-nav__link--active
+            "
+          >
+            Студия
+          </a>
+        </li>
+        <li class="mobile-menu__site-nav__item">
+          <a href="./portfolio.html" class="mobile-menu__site-nav__link"
+            >Портфолио</a
+          >
+        </li>
+        <li class="mobile-menu__site-nav__item">
+          <a href="#" class="mobile-menu__site-nav__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts-list">
+        <li class="mobile-menu__contacts-item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-menu__contacts-link mobile-menu__contacts-link--mail"
+          >
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a
+            href="tel:+380961111111"
+            class="mobile-menu__contacts-link mobile-menu__contacts-link--tel"
+          >
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__social-links">
+        <li class="mobile-menu__social-links__item">
+          <a class="mobile-menu__social-links__link" href="#"> Instagram </a>
+        </li>
+        <li class="mobile-menu__social-links__item">
+          <a class="mobile-menu__social-links__link" href="#"> Twitter </a>
+        </li>
+        <li class="mobile-menu__social-links__item">
+          <a class="mobile-menu__social-links__link" href="#"> Facebook </a>
+        </li>
+        <li class="mobile-menu__social-links__item">
+          <a class="mobile-menu__social-links__link" href="#"> LinkedIn </a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
