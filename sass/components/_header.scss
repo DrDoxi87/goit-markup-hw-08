@@ -54,15 +54,17 @@
 
 .mobile-menu {
   &--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     padding-top: 48px;
-    padding-right: 0;
     padding-bottom: 48px;
-    padding-left: 15px;
     background-color: #ffffff;
 
     transform: translateX(100%);
@@ -76,14 +78,11 @@
   &__contacts-list,
   &__social-links {
     padding-left: 0;
+    text-align: center;
   }
 
   &__site-nav__item:not(:last-child) {
     margin-bottom: 32px;
-  }
-
-  &__site-nav__item:last-child {
-    margin-bottom: 270px;
   }
 
   &__site-nav__link {
